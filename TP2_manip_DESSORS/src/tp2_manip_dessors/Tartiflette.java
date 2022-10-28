@@ -9,5 +9,9 @@ package tp2_manip_dessors;
  * @author maxCD
  */
 public class Tartiflette {
+    int nbCalories;
     
+    public Tartiflette(int nbcalories){
+        nbCalories = nbcalories;        
+    }
 }

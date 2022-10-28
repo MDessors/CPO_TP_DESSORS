@@ -9,5 +9,9 @@ package tp2_manip_dessors;
  * @author maxCD
  */
 public class Moussaka {
+    int nbCalories;
     
+     public Moussaka(int nbcalories) {    
+        nbCalories = nbcalories;
+    }
 }

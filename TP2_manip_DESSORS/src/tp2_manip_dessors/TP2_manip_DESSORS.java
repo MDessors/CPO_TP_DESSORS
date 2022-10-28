@@ -21,6 +21,18 @@ public class TP2_manip_DESSORS {
         
         System.out.println("nb de calories de Assiette 2 : " +assiette2.nbCalories) ;
         System.out.println("nb de calories de Assiette 3 : " +assiette3.nbCalories) ;
+        
+        Tartiflette assiettetemp = assiette1;
+        assiette1 = assiette2;
+        assiette2 = assiettetemp;
+        
+        //Moussaka assiette666 = assiette1 ; Faux
+        //Moussaka assiette667 = new Tartiflette() ;Faux
+        
+        Moussaka[] tabmoussk = new Moussaka[10];
+        for (int k = 0; k < tabmoussk.length; k++){
+            tabmoussk[k] = new Moussaka(1); 
+        }
     }
     
 }
