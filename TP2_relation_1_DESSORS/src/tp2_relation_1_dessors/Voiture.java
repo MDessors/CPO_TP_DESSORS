@@ -15,10 +15,11 @@ public class Voiture {
     int PuissanceCV;
     Personne proprietaire;
     
-    public Voiture(String modele, String marque, int puissanceCV){      // constructeur
+    public Voiture(String Model, String brand, int puissanceCV){      
+// constructeur
         
-        Modele = modele;
-        Marque = marque;
+        Modele = Model;
+        Marque = brand;
         PuissanceCV = puissanceCV;
         proprietaire = null;
     }
