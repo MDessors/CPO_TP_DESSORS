@@ -15,11 +15,18 @@ public class Personne {
     int nbVoitures;
     Voiture[] liste_voitures;
     
-    public Personne(String prenom, String nom){     //constructeur de la classe personne
+    public Personne(String prenom, String nom){     
+//constructeur de la classe personne
         
         Prenom = prenom;
         Nom = nom;
         liste_voitures = new Voiture[3];
         nbVoitures = 0;
+    }
+    @Override
+    public String toString() {
+        String chaine_a_retourner;
+        chaine_a_retourner = "\nnom : " + Nom + "\nprenom : " + Prenom +"\nnombre de voitures : " + nbVoitures;
+        return chaine_a_retourner ;
     }
 }
