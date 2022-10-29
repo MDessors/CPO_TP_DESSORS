@@ -29,4 +29,21 @@ public class Personne {
         chaine_a_retourner = "\nnom : " + Nom + "\nprenom : " + Prenom +"\nnombre de voitures : " + nbVoitures;
         return chaine_a_retourner ;
     }
-}
+    public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
+        if (voiture_a_ajouter.proprietaire !=null){
+            System.out.println(voiture_a_ajouter + "voiture volee !!");
+            return false;
+            }else{
+            if(this.nbVoitures == 3){
+                System.out.println(this.Nom + this.Prenom+ "a déjà 3 voitures");
+                return false;
+            }else{
+                this.liste_voitures[nbVoitures] = voiture_a_ajouter;
+                nbVoitures += 1;
+                voiture_a_ajouter.proprietaire = this  ;
+                return true;
+
+                }
+            }
+        }
+    }
