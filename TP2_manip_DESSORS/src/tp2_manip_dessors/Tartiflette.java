@@ -10,8 +10,9 @@ package tp2_manip_dessors;
  */
 public class Tartiflette {
     int nbCalories;
-    
+    //Atribut nbCalories
     public Tartiflette(int nbcalories){
-        nbCalories = nbcalories;        
+        nbCalories = nbcalories;
+    //Le constructeur correspondant qui initialise l’attribut         
     }
 }

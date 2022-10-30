@@ -10,8 +10,9 @@ package tp2_manip_dessors;
  */
 public class Moussaka {
     int nbCalories;
-    
+    //Atribut nbCalories
      public Moussaka(int nbcalories) {    
         nbCalories = nbcalories;
+        //Le constructeur correspondant qui initialise l’attribut 
     }
 }
