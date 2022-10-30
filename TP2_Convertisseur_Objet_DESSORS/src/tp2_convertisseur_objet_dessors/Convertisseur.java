@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Convertisseur {
     int nbConversion;
-    
+    //Exercice 2 TP1
     public Convertisseur(){
         nbConversion = 0;
     }
@@ -23,37 +23,38 @@ public class Convertisseur {
         public double CelciusVersKelvin(double celcius){
         double Kelvin = celcius + 273.15;
         return Kelvin;
-        
+        //Conversion de degreecelcius a Kelvin
     }
        
     public double KelvinVersCelcius(double kelvin){
         double celcius = kelvin - 273.15;
         return celcius;
-        
+        //Conversion de Kelvin a degree celcius
     }
        
     public double FarenheitVersCelcius(double farenheit){
         double celcius = (farenheit - 32) / 1.8;
         return celcius;
+        //conversion de farenheit a degre celcius
 
     }
 
     public double CelciusVersFarenheit(double celcius){
         double farenheit = (celcius * 1.8) + 32;
         return farenheit;
-        
+        //conversion de degree celcius a farenheit
     }
     
     public double KelvinVersFarenheit(double kelvin){
         double farenheit = CelciusVersFarenheit(KelvinVersCelcius(kelvin));
         return farenheit;
-        
+        //Changement de vairable        
     }
    
     public double FarenheitVersKelvin(double farenheit){
         double kelvin = CelciusVersKelvin(FarenheitVersCelcius(farenheit));
         return kelvin;
-        
+        //Changement de variable
     }
     public byte selectmode(){
         
@@ -69,7 +70,7 @@ public class Convertisseur {
                 + "4 -> Celcius Vers Farenheit\n"
                 + "5 -> Kelvin Vers Farenheit\n"
                 + "6 -> Farenheit Vers Kelvin\n");
-        
+        //TYpe de fonction qui permet a l'utilisateur de choisir sa conversion
         while(mode<1 | mode>6){
             mode = sc.nextByte();            
         }
@@ -77,7 +78,8 @@ public class Convertisseur {
         
     }
     public double convert(){
-        
+        //Converteur qui donnera la possibilite a l'utilisateur 
+        //de lui saisir les valeurs pour ses conversions
         byte mode = selectmode();
         
         Scanner sc = new Scanner(System.in);
