@@ -15,7 +15,8 @@ public class TP2_relation_1_DESSORS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        //les lignes de création et manipulation des objets à mettre 
+        //dans la méthode main()
         Voiture uneClio = new Voiture ("Clio", "Renault", 5 ) ;
         Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5 ) ;
         Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
@@ -43,7 +44,7 @@ public class TP2_relation_1_DESSORS {
         reno.liste_voitures[1] = uneAutreClio;
         reno.nbVoitures = 2;
         uneAutreClio.proprietaire = reno;
-        
+        //Ajoute une seconde voiture à Bob, et deux autres voitures à Reno
         System.out.println("la premiere voiture de Reno est " +reno.liste_voitures[0] + "\net la deuxieme est " + reno.liste_voitures[2]);
 
     }

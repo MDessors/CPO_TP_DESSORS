@@ -9,6 +9,8 @@ package tp2_relation_1_dessors;
  * @author maxCD
  */
 public class Voiture {
+    //les attributs, le constructeur, et la méthode 
+    //toString() comme vus dans les exercices précédents.
     
     String Modele;
     String Marque;
@@ -16,11 +18,18 @@ public class Voiture {
     Personne proprietaire;
     
     public Voiture(String Model, String brand, int puissanceCV){      
-// constructeur
+// constructeur de la classe voiture
         
         Modele = Model;
         Marque = brand;
         PuissanceCV = puissanceCV;
         proprietaire = null;
+    }
+    @Override
+    public String toString() {
+        String chaine_a_retourner;
+        chaine_a_retourner = "\nmodel : " + Modele + "\nbrand : " + Marque +"\npuissanceCV : " + PuissanceCV;
+        return chaine_a_retourner ;
+
     }
 }
