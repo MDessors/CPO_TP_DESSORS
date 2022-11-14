@@ -8,32 +8,32 @@ package tp3_dessors;
  *
  * @author maxCD
  */
-public class Baton extends Arme {
-    int age;
+public class Epee extends Arme{
+    int indice ;
 
-    public Baton(String n, int i,int a) {
+    public Epee(String n, int i, int ind) {
         super(n, i);
-        if (a>99){
-            age = 99;
+        if (ind>99){
+            ind = 99;
         }
-        if (a>0){
-            age = a;
+        if (ind>0){
+            indice = ind;
         }else{
-            age = 0;
+            indice = 0;
         }
     }
 
     @Override
     public String toString() {
-        return "Baton{" + "age=" + age + '}';
+        return "Ep\u00e9e{" + "indice=" + indice + '}';
     }
 
-    public int getAge() {
-        return age;
+    public int getIndice() {
+        return indice;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setIndice(int indice) {
+        this.indice = indice;
     }
     
 }
