@@ -8,6 +8,11 @@ package tp3_dessors;
  *
  * @author maxCD
  */
-public class Baton {
+public class Baton extends Arme {
+    int age;
+
+    public Baton(String n, int i) {
+        super(n, i);
+    }
     
 }

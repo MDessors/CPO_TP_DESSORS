@@ -12,7 +12,14 @@ public class Arme {
     String nom;
     private int nivDatack ;
     
-public String toString(){
-    return ("Nom de l'arme:"+ nom + "\Niveau de l'arme:"+nivDatack) ;
-}
+    public Arme (String n ,int i ){
+        nom = n;
+        nivDatack = i;
+    }
+    
+    @Override
+    public String toString(){
+    return "Nom de l'arme: "+nom+"\nNiveau de l'arme: " +nivDatack;
+    }
+
 }

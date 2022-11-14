@@ -8,6 +8,10 @@ package tp3_dessors;
  *
  * @author maxCD
  */
-public class Epée {
-    
+public class Epée extends Arme{
+    int indice ;
+
+    public Epée(String n, int i) {
+        super(n, i);
+    }
 }
