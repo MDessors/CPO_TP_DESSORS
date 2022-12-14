@@ -4,6 +4,9 @@
  */
 package tp3_dessors;
 
+import Armes.Baton;
+import Armes.Epee;
+
 /**
  *
  * @author maxCD
