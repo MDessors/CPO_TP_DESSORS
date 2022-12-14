@@ -15,6 +15,9 @@ public class Miniprojet_ColasDemangeot_Dessors_LightsOffConsole {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        CelluleLumineuse jeu = new CelluleLumineuse (5);
+        System.out.println(jeu);
+        
     }
     
 }
