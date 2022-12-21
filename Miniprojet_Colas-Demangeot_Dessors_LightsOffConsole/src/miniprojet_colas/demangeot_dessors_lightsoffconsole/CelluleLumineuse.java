@@ -21,18 +21,29 @@ public class CelluleLumineuse {
             }
         }
     }
+    
     public String toString(){
         String s ="";
         for(int i = 0; i < grille.length; i++){
             for(int j = 0; j < grille[i].length; j++){
                 if(grille[i][j]){
-                    s +="a";
+                    s +="0";
                 }else{
-                    s +="e";
+                    s +="|";
                 }
             }
             s +="\n";
         }
         return s;
     }
+    
+    public void LumièreDebutDePartie(){
+         for(int i = 0; i < grille.length; i++){
+            for(int j = 0; j < grille[i].length; j++){
+                if (Math.random() > 0.5){
+                 grille[i][j] = true;   
+                }
+            }
+        }    
+    } 
 }
