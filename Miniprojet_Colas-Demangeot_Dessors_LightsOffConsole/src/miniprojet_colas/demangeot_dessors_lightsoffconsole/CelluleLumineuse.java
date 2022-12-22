@@ -46,4 +46,8 @@ public class CelluleLumineuse {
             }
         }    
     } 
+    
+    public void choix (int x,int y){
+        grille[x][y]=!grille[x][y];
+    }
 }
