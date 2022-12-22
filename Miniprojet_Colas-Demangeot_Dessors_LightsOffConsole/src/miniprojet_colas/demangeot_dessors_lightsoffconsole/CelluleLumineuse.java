@@ -29,7 +29,7 @@ public class CelluleLumineuse {
                 if(grille[i][j]){
                     s +="0";
                 }else{
-                    s +="|";
+                    s +="X";
                 }
             }
             s +="\n";
@@ -49,5 +49,22 @@ public class CelluleLumineuse {
     
     public void choix (int x,int y){
         grille[x][y]=!grille[x][y];
+        
+        if (x < grille.length - 1 ){
+        grille[x + 1][y]=!grille[x + 1][y];
+        }
+        
+        if (x > 0){
+        grille[x - 1][y]=!grille[x - 1][y];
+        }
+        
+        if (y < grille.length - 1){
+        grille[x][y + 1]=!grille[x][y + 1];
+        }
+        
+        if(y > 0){
+        grille[x][y - 1]=!grille[x][y - 1];
+        }
+        
     }
 }
