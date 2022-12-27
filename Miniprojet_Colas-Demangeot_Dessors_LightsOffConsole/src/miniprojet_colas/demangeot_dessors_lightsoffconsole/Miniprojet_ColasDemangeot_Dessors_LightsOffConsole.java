@@ -22,10 +22,10 @@ public class Miniprojet_ColasDemangeot_Dessors_LightsOffConsole {
         
         Scanner sc = new Scanner (System.in);
         while (true){
-        System.out.println("Choisiser une coordonner X");
+        System.out.println("Choisiser une coordonner X de 0 a 5");
         int x = sc.nextInt();
         
-        System.out.println("Choisiser une coordonner Y");
+        System.out.println("Choisiser une coordonner Y de 0 aù 5");
         int y = sc.nextInt();
         
         jeu.choix(x, y);
